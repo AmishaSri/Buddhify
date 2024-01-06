@@ -1,110 +1,60 @@
-<!doctype html>
-    <html>
-        <head>
-           <title>Buddhify</title>
-        <link rel="shortcut icon" href="public/Images/favicon.ico">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="=width=device-width,initial-scale=1.0">
-        <meta name="keywords" content="best sellers,rom-com,fiction,non-fiction,mystery,magaines,academics,etc>
-        <meta name="description" content="Digital WonderLand for Readers">
-        <style>
-         body{
-            background-size:cover;
-         }
-         header div{
-            color:white;
-            font-size:40px;
-            font-weight: bold;
-            display:flex;
-            justify-content: space-between;
-         }
-         .lang{
-            font-size: 25px;
-            margin-left: 600px;
-            border:1px solid white;
-            
-         }
-        .head{
-         font-size:25px;
-         background-color: red;
-         color:white;
-         font-weight: bold;
-        }
-        .section-heading{
-            font-size: 40px;
-           
-            font-weight: bold;
-            text-align: center;
-            margin-top: 140px;
-        }
-       .section-body{
-         background-color: wheat;
-         color:black;
-         font-size: 25px;
-         width:600px;
-         height:50px;
-         margin-top: 20px;
-         margin-left: 450px;
-       }
-      .done{
-         background-color: blue;
-         color:white;
-         margin-top:30px;
-         margin-left:700px;
-         font-size: 30px;
-         font-weight: bold;
-      }
-      .section-footer{
-         font-size: 20px;
-         color:white;
-         text-align:center;
-         font-weight: bold;
-         margin-top: 25px;
-      }
-      .phrase{
-         text-align: center;
-         font-size: 30px;
-      }
-      a{
-         text-decoration: none;
-         color:white;
-         font-size: 20px;
-      }
-        </style>
-       </head>
-       <body class="container-fluid" background="public/Images/cloud.gif">
-        <header>
-                 <div>
-                 <div><span class="bi bi-bookmarks"></span>Buddhify</div>
-                 <details class="lang">
-                  <summary>Language<span class="bi bi-translate"></span></summary>
-                  <dl>
-                     <dd><a href="index.html">English</a></dd>
-                  <dd><a href="hindi-index.html">हिन्दी</a></dd>
-                  </dl>
-                   </details>
-                 <div class="head"><a href="./public/newUser.html">New User</a><span class="bi bi-person-fill"></span></div> 
-              </div>                  
-        </header>
-        <section>
-         <div class="section-heading">Welcome to the WORLD OF WISDOM!</div>
-         <div class="phrase">"Detachment is not that you own nothing.<br/>Detachment is that nothing owns you."</div>
-         <div>
-            <form id="start">
-            <input class="section-body" type="email" name="emailId" placeholder="Email address or Phone number" autofocus required>
-            <input class="section-body" type="password" name="passWord" placeholder="Password" required minlength="8">
-         </form>
-         </div>
-        <a href="./public/home.html"><input class="done" type="submit" form="" value="Login"></a>
-         <div class="section-footer">
-            <span><a href="forgot.html">Forgot Password?</a></span>
-            <span> | <a href="know-interest.html">Skip</a></span>
-          </div>
-        </section>
-        <script src="../node_modules/jquery/dist/jquery.js"></script>
-        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-       </body>  
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddhify</title>
+    <link rel="shortcut icon" href="public/Images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <style>
+ @media (max-width: 768px){
+    body{
+        background-image: url("./public/images/bg-portrait.jpeg");
+        background-size: cover;
+    }
+    .h2{
+      font-size: 1.5rem;
+    }
+    .h3{
+      font-size: 1rem;
+    }
+ }
+ a{
+  text-decoration: none;
+  color:white;
+ }
+ body{
+    background-size: cover;
+ }
+ input{
+  margin: auto;
+ }
+ header{
+  background-color: orchid;
+ }
+  </style>
+</head>
+<body class="container-fluid" background="./public/images/krish.png">
+  <header>
+    <nav class="navbar navbar-light justify-content-between">
+       <div><a class="navbar-brand fs-1 fw-bold">Buddhify</a></div>
+       <div class="btn btn-warning btn-lg"><a class="text-dark" href="./public/newUser.html">New User</a></div>
+      </nav>
+  </header>
+  <section class="text-center mt-3 text-light p-3">
+    <div class="h2 mt-5">Welcome to the WORLD OF WISDOM!</div>
+    <div class="h3">"Detachment is not that you own nothing. Detachment is that nothing owns you."</div>
+    <form id="start container-fluid">
+      <div class="form-group"><input class="mt-5 w-50 form-control" type="email" name="emailId" placeholder="Email address or Phone number" autofocus required></div>
+      <div class="form-group"><input class="mt-2 w-50 form-control" type="password" name="passWord" placeholder="Password" required minlength="8"></div>
+     </form>
+          <button class="btn btn-warning btn-lg mt-3" type="submit"  form="start"><a class="text-dark" href="./public/home.html">Login</a></button>
+   <div>
+      <span class="h3"><a href="forgot.html">Forgot Password?</a></span>
+      <span class="h3"><a href="know-interest.html"> Skip</a></span>
+    </div>
+  </section>
+</body>
+</html>
