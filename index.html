@@ -1,334 +1,110 @@
-<!DOCTYPE html>
-<html lang="en-IN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buddhify</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<style>
-   @media screen and (orientation:portrait){
-   .differ2,.differ3{
-      font-size: 10px;
-   }
-   li{
-      margin-left: -100px;
-   }
-   .within{
-      margin-top: 10px;
-      margin-left:-180px;
-      height: 280px;
-      width:360px;
-   }
-        .carousel-item{
-         width:460px;
+<!doctype html>
+    <html>
+        <head>
+           <title>Buddhify</title>
+        <link rel="shortcut icon" href="public/Images/favicon.ico">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="=width=device-width,initial-scale=1.0">
+        <meta name="keywords" content="best sellers,rom-com,fiction,non-fiction,mystery,magaines,academics,etc>
+        <meta name="description" content="Digital WonderLand for Readers">
+        <style>
+         body{
+            background-size:cover;
+         }
+         header div{
+            color:white;
+            font-size:40px;
+            font-weight: bold;
+            display:flex;
+            justify-content: space-between;
+         }
+         .lang{
+            font-size: 25px;
+            margin-left: 600px;
+            border:1px solid white;
+            
+         }
+        .head{
+         font-size:25px;
+         background-color: red;
+         color:white;
+         font-weight: bold;
         }
-        .carousel{
-         left:-130px ;
-         top:40px;
+        .section-heading{
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 140px;
         }
-    .img1{
-         height:100px;
-         width:100px;
+       .section-body{
+         background-color: wheat;
+         color:black;
+         font-size: 25px;
+         width:600px;
+         height:50px;
+         margin-top: 20px;
+         margin-left: 500px;
+       }
+      .done{
+         background-color: blue;
+         color:white;
+         margin-top:30px;
+         margin-left:700px;
+         font-size: 30px;
+         font-weight: bold;
       }
-   }
-   nav{
-        position:relative;
-        z-index: 1;
-    }
-    .differ2,.differ3{
-      height:600px;
-      margin-top:1150px;
-
-    }
-   .within{
-      position: absolute;
-      margin-top:-850px;
-      left:217px;
-   }
-   footer{
-      background-image: linear-gradient(skyblue,white);
-      height:200px;
-      color:black;
-      font-weight: bold;
-   }
-   .list{
-      margin-left: 100px;
-   }
-   #two{
-      margin-left: 120px;
-      width: 1250px;
-   }
-   .parallax{
-      background-image: url("./public/images/krish.png");
-      min-height: 600px;
-      background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     margin-top: 10px;
-   }
-   .mediate div:nth-child(1){
-         position:absolute;
-         left:140px;
-         margin-top: 10px;
-   }
-   .mediate div:nth-child(2){
-         position:absolute;
-         left:460px;
-         margin-top: 310px;
-        
-   }
-   .mediate div:nth-child(3){
-         position:absolute;
-         left:460px;
-         margin-top: 10px;
-
-   }
-   .mediate div:nth-child(4){
-         position:absolute;
-         left:770px;
-         margin-top: 310px;
-   }
-   .mediate div:nth-child(5){
-         position:absolute;
-         left:770px;
-   }
-   .mediate div:nth-child(6){
-         position:absolute;
-        left:1080px;
-        margin-top: 10px;
-   }
-   .phrase{
-      margin-left:150px;
-      font-weight: bold;
-      margin-top: 40px;
-   }
-   .accordion-button{
-      height: 60px;
-      font-size: 30px;
-   }
-   .phrase1{
-      position:absolute;
-      margin-top:630px;
-      background-image: linear-gradient(white,gold);
-      height:250px;
-      margin-left:10px;
-   }
-   .img1{
-      height:600px;
-      width:310px;
-   }
-  a{
-   text-decoration: none;
-   color:black;
-  }
-</style>
-</head>
-<body class="container-fluid">
-     <header>
-        <nav class="navbar navbar-expand-lg justify-content-center bg-info-subtle mt-5" data-bs-theme="light" id="home" >
-           <div class="container-fluid">
-            <a href="home.html" class="navbar-brand ms-5 h1 fw-bold"><span><img class="rounded-5" src="./public/images/logoo.jpeg" height="40" width="40"></span> Buddhify</a>
-            <button class="navbar-toggler" type="button" data-bs-target="#menuList" data-bs-toggle="collapse"> <span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="menuList">
-                <ul class="navbar-nav fw-bold">
-              <li class="nav-item ms-5"><a class="nav-link" href="home.html">Home</a></li>
-              <li class="nav-item ms-5"><a class="nav-link" href="blog.html">Blog</a></li>
-              <li class="nav-item ms-5"><a class="nav-link" href="remedies.html">Gita Remedies</a></li>
-              <li class="nav-item ms-5"><a class="nav-link" href="course.html">All Courses</a></li>
-              <li class="nav-item ms-5"><a class="nav-link" href="resource.html">Resources</a></li>
-              <li class="nav-item ms-5"><a class="nav-link" href="shop.html">Shop</a></li>
-              <li class="nav-item ms-5"><a class="nav-link" href="about.html">About</a></li>
-              <li class="nav-item ms-5"><button class="btn btn-warning"><a class="nav-link" target="_blank"  href="https://www.google.com">Ask Anything</a></button></li>
-                </ul>
-            </div>
-           </div>
-        </nav>
-        <div class="card text-light" style="position:relative; z-index: 0; top:-150px;">
-         <img  class="card-img "src="./public/images/Sunrise.gif" height="700" width="100%">
-        <div class="card-img-overlay">
-         <br><br><br><br><br><br>
-         <br><br><br><br><br><br>
-         <br><br><br>
-        <div class="row">
-         <div class="col-1"></div>
-         <div class="col-7">
-            <div class="h1 fw-bold">Inner peace is the new Success!</div>
-            <div class="ms-1 h4"><b class="text-warning">Bhagavad-Gita</b> the user manual to expertise the art of living.</div>
-            <div class="ms-1 h4"><b class="text-warning">Meditation</b> because some questions can't be answered by Google.</div>
-            <div class="ms-1 h4"><b class="text-warning">YOGA</b> is the journey of the self, through the self, to the self.</div>
+      .section-footer{
+         font-size: 20px;
+         color:white;
+         text-align:center;
+         font-weight: bold;
+         margin-top: 25px;
+      }
+      .phrase{
+         text-align: center;
+         color: white;
+         font-size: 30px;
+      }
+      a{
+         text-decoration: none;
+         color:white;
+         font-size: 20px;
+      }
+        </style>
+       </head>
+       <body class="container-fluid" background="public/Images/background-pic.png">
+        <header>
+                 <div>
+                 <div><span class="bi bi-bookmarks"></span>Bookflix</div>
+                 <details class="lang">
+                  <summary>Language<span class="bi bi-translate"></span></summary>
+                  <dl>
+                     <dd><a href="index.html">English</a></dd>
+                  <dd><a href="hindi-index.html">हिन्दी</a></dd>
+                  </dl>
+                   </details>
+                 <div class="head"><a href="newUser.html">New User</a><span class="bi bi-person-fill"></span></div> 
+              </div>                  
+        </header>
+        <section>
+         <div class="section-heading">Welcome to the WORLD OF WISDOM!</div>
+         <div class="phrase">"Detachment is not that you own nothing.<br/>Detachment is that nothing owns you."</div>
+         <div>
+            <form id="start">
+            <input class="section-body" type="email" name="emailId" placeholder="Email address or Phone number" autofocus required>
+            <input class="section-body" type="password" name="passWord" placeholder="Password" required minlength="8">
+         </form>
          </div>
-         <div class="col-2"></div>
-        </div>
-        </div>
-        </div>
-        <div class="carousel container-fluid carousel-fade" style="margin-top: -180px;" data-bs-ride="carousel" id="two">
-           <div class="carousel-inner">
-        <div class="carousel-item"><a href="medi-course.html"><img class="rounded-5" src="./public/images/banner1.png" width="100%"></a></div>
-            <div class="carousel-item  active"><a href="gita-course.html"><img class="rounded-5" src="./public/images/banner2.png" width="100%" ></a></div>
-           </div>
-        </div>
-     </header>
-     <section>
-      <h1 class="phrase">YO:GA O'CLOCK</h1>
-      <h3 class="fw-bold p-1 text-secondary" style="margin-left:130px;">Y.O.G.A Your Opportunity for growth and awakening..</h3>
-         <div class="mediate">
-            <div><a href="yogaBeg.html"><img  class="rounded-5 img1" src="./public/images/beg(person).jpeg"></a></div>
-          <div><a href="stress.html"><img class="rounded-5" src="./public/images/beg(online).jpeg" height="300" width="300"></a></div>
-            <div><a href="surya.html"><img class="rounded-5" src="./public/images/youth.jpg" height="300" width="300"></a></div>
-           <div ><a href="corporate.html"><img class="rounded-5" src="./public/images/corporate.jpg" height="300" width="300"></a></div>
-          <div ><a href="kids.html"><img class="rounded-5" src="./public/images/child.jpeg" height="300"width="300"></a></div>
-           <div ><a href="advanced.html"><img class="rounded-5" src="./public/images/advanced.jpeg" height="600" width="300"></a></div>
-         </div>
-         <div class="h1 fw-bold p-5 phrase1">
-            <h1 class="m-5">"Transformation awaits you on the other side of the Bhagavad-Gita"</h1>
-         </div>
-        <div class="row">
-         <div class="col-1"></div>
-       <div class="col-5 bg-info-subtle differ2"><br><br><br><br><br>
-         <h1 class="mt-5 ms-4">Life Without Bhagavad-Gita</h1>
-         <ul type="disc" class="h2 list">
-            <li>Anger</li>
-            <li>Ego</li>
-            <li>Lust</li>
-            <li>Greed</li>
-            <li>Jealously</li>
-            <li>Attachment</li>
-            <li >Depression</li>
-            <li>Anxiety</li>
-         </ul>
-       </div>
-       <div class="col-5 bg-warning-subtle differ3"><br><br><br><br><br>
-         <h1 class="mt-5 ms-4">Life With Bhagavad-Gita</h1>
-         <ul type="disc" class="h2 list">
-            <li>Calm</li>
-            <li>Satisfied</li>
-            <li>Gratitude</li>
-            <li>Pride</li>
-            <li>Kind</li>
-            <li>Positive</li>
-            <li>Solution-seeker</li>
-            <li>Hope</li>
-         </ul>
-       </div>
-       <div class="col-1"></div>
-        </div>
-        <img class="within" src="./public/images/within.png">
-       <div class="card text-light text-center">
-         <div class="parallax container-fluid card-img">
-         <div class="card-img-overlay">
-            <br><br><br><br><br><br><br>
-            <div class="row">
-                <div class="col-5"></div>
-                <div class="col-6">
-                  <div class="h1 fw-bold">VEDIC GRANTH'S</div>
-                  <p class="h5">Discover the timeless wisdom of ancient India with free and effortless access to over 900 Vedic scriptures.
-                     Immerse yourself in the rich cultural heritage of the Vedas, filled with divine knowledge and guidance for the modern world.
-                      With just one click, unlock a treasure trove of sacred texts and deepen your understanding of the divine.</p><br>
-                      <button class="btn btn-warning rounded-pill btn-lg"><a href="https://vedabase.io/en/library/">ACCESS PDFS NOW </a><span class="bi bi-arrow-right"></span></button>
-                </div>
-                <div class="col-1"></div>
-            </div>
-         </div> 
-         </div>
-       </div>
-        <h1 class="mt-5 ms-4">How Bhagavad Gita influenced these Famous Personality world wide..</h1>
-        <div class="d-flex justify-content-center mt-3">
-         <div class="card ms-3">
-            <img class="card-img" src="./public/images/einstein.jpg" height="300" width="150">
-            <div class="card-body">
-               <p class="card-text">"When I read the Bhagavad-Gita and reflect about how God
-                  created this Universe everything else seems so <span class="text-danger fw-bold">superfluous.</span> I have made the Bhagavad-Gita
-                  as the main source of <span class="text-danger fw-bold">my inspiration</span> and guide for the purpose of scientific investigations
-                  and formation of my<span class="text-danger fw-bold"> theories</span>"</p>
-            </div>
-            <div class="card-footer bg-secondary-subtle  h3 fw-bold">Albert Einstein</div>
+        <a href="./public/home.html"><input class="done" type="submit" form="" value="Login"></a>
+         <div class="section-footer">
+            <span><a href="forgot.html">Forgot Password?</a></span>
+            <span> | <a href="know-interest.html">Skip</a></span>
           </div>
-          <div class="card ms-5">
-            <img class="card-img" src="./public/images/Abdul-Kalam.jpg"  height="300" width="150">
-            <div class="card-body">
-               <p class="card-text">"Bhagavad Geeta says, see the flower how <span class="text-danger fw-bold">generously </span>it distributes perfume
-                   and honey it  gives to all<span class="text-danger fw-bold"> freely</span>  to all it's love when it's work is  done, it falls away<span class="text-danger fw-bold"> quietly</span>
-                  try to be like the flower unassuming despite all his qualities" what a <span class="text-danger fw-bold">  beautiful message </span>
-                  for all generation of this nation</p>
-            </div>
-            <div class="card-footer bg-secondary-subtle h3 fw-bold">A.P.J Abdul Kalam</div>
-          </div>
-          <div class="card ms-5">
-            <img class="card-img" src="./public/images/Sunita-williams.jpg" height="300" width="150">
-            <div class="card-body">
-               <p class="card-text">The American Astronaut,with Indian roots, she carried a Ganesha Idol and <span class="text-danger fw-bold">
-                  copy of  </span>Bhagavad Gita to with her in the space."Those are <span class="text-danger fw-bold">spiritual </span>things to <span class="text-danger fw-bold"> reflect </span>upon yourself, life,
-                   the world around you and see things the other way. I thought it was quite appropriate."</p>
-            </div>
-            <div class="card-footer bg-secondary-subtle  h3 fw-bold">Sunita Williams</div>
-          </div>
-          <div class="card ms-5">
-            <img class="card-img" src="./public/images/modi.jpg" height="300" width="150">
-            <div class="card-body">
-               <p class="card-text">"The Gita makes one think. It inspires us to question. It encourages debate and keeps our<span class="text-danger fw-bold"> minds open.</span>
-                   Anybody who is inspired by Gita will always be <span class="text-danger fw-bold">compassionate by nature</span> and democratic in temperament,"
-                   Prime Minister Modi said while speaking at the<span class="text-danger fw-bold"> virtual launch </span>of the Kindle version of Bhagavad Gita.</p>
-            </div>
-            <div class="card-footer bg-secondary-subtle h3  fw-bold">P.M Narendra Modi</div>
-          </div>
-        </div>
-
-        <h1 class="text-center mt-5 bg-secondary-subtle">FREQUENTLY ASKED QUESTIONS</h1>
-        <div class="accordian" id="faqs"> 
-           <div class="accordion-item">
-              <div class="accordion-header">
-              <button data-bs-target="#q1" data-bs-toggle="collapse" class="accordion-button bg-secondary-subtle">What is advantages of Joining Online Gita Classes?</button>
-              </div>
-              <div class="accordion-collapse collapse" id="q1" data-bs-parent="#faqs">
-              <div class="accordion-body bg-info-subtle h3">
-                <ul class="ms-5 mt-2">
-                 <li>Systematic and Scientific presentation of Bhagavad Gita As It Is by an expert practitioner with practical examples</li>
-                <li> Multiple levels - Fully online courses</li>
-                <li> Short video lectures supplemented by study material</li>
-                 <li>Personal guidance by a qualified mentor throughout your Gita journey and beyond
-                    Interactive Q&A sessions.</li>
-                 <li>Progress at your own pace - No time limit</li>
-                 <li>Online test to evaluate your understanding</li>
-                 <li>Gita certification upon completion of the course</li>
-                 <li>Opportunity to attend spiritual retreats</li>
-                </ul>
-              </div>
-              </div>
-           </div>
-           <div class="accordion-item">
-              <div class="accordion-header">
-                 <button data-bs-target="#q2" data-bs-toggle="collapse" class="accordion-button bg-secondary-subtle mt-1">What is advantages of Joining Online Meditation Classes?</button>
-              </div>
-              <div class="accordion-collapse collapse" id="q2" data-bs-parent="#faqs">
-              <div class="accordion-body bg-info-subtle h3 ">
-               <ul class="ms-5 mt-2">
-                  <li>Meditation can help improve and amplify your positive emotions.</li>
-                  <li>You can use meditation to help increase your productivity or just to help you relax.</li>
-                 <li>Meditation can also help you combat stress by changing your reaction to it.</li>
-                 <li>A Daily meditation practise</li>
-               </ul>
-              </div>
-              </div>
-           </div>
-           <div class="accordion-item">
-              <div class="accordion-header">
-                 <button data-bs-target="#q3" data-bs-toggle="collapse" class="accordion-button bg-secondary-subtle mt-1">What is the best way to attain bliss?</button>
-              </div>
-              <div class="accordion-collapse collapse" id="q3" data-bs-parent="#faqs">
-              <div class="accordion-body bg-info-subtle h3 ">
-             <p class="ms-5 mt-2">  One, is by meditating, and the other, is by serving people around you - by getting into some service activity. Seeing God within you is meditation. Seeing God in the people around you is love or service. They both go hand-in-hand.</p>
-              </div>
-              </div>
-           </div>
-        </div>
-     </section>
-     <footer>
-     <div class="ms-5 mt-5">&copy; copyright Buddhify.com</div>
-     <div>Feedback</div>
-     <div><a href="#home"><button class="bi bi-arrow-up"></button></a></div>
-     </footer>
-</body>
-</html>
+        </section>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+       </body>  
+    </html>
