@@ -8,35 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <style>
-   @media screen and (orientation:portrait){
-   .differ2,.differ3{
-      font-size: 10px;
-   }
-   li{
-      margin-left: -100px;
-   }
-   .within{
-      margin-top: 10px;
-      margin-left:-180px;
-      height: 280px;
-      width:360px;
-   }
-        .carousel-item{
-         width:460px;
-        }
-        .carousel{
-         left:-130px ;
-         top:40px;
-        }
-    .img1{
-         height:100px;
-         width:100px;
-      }
-   }
-   nav{
-        position:relative;
-        z-index: 1;
-    }
+@media (max-width: 768px){
+     
+}
+   
     .differ2,.differ3{
       height:600px;
       margin-top:1150px;
@@ -55,10 +30,6 @@
    }
    .list{
       margin-left: 100px;
-   }
-   #two{
-      margin-left: 120px;
-      width: 1250px;
    }
    .parallax{
       background-image: url("images/krish.png");
@@ -100,11 +71,6 @@
         left:1080px;
         margin-top: 10px;
    }
-   .phrase{
-      margin-left:150px;
-      font-weight: bold;
-      margin-top: 40px;
-   }
    .accordion-button{
       height: 60px;
       font-size: 30px;
@@ -128,7 +94,7 @@
 </head>
 <body class="container-fluid">
      <header>
-        <nav class="navbar navbar-expand-lg justify-content-center bg-info-subtle mt-5" data-bs-theme="light" id="home" >
+        <nav class="navbar navbar-expand-lg justify-content-center bg-info-subtle" data-bs-theme="light" id="home" >
            <div class="container-fluid">
             <a href="home.html" class="navbar-brand ms-5 h1 fw-bold"><span><img class="rounded-5" src="./images/logoo.jpeg" height="40" width="40"></span> Buddhify</a>
             <button class="navbar-toggler" type="button" data-bs-target="#menuList" data-bs-toggle="collapse"> <span class="navbar-toggler-icon"></span></button>
@@ -146,34 +112,32 @@
             </div>
            </div>
         </nav>
-        <div class="card text-light" style="position:relative; z-index: 0; top:-150px;">
-         <img  class="card-img "src="./images/Sunrise.gif" height="700" width="100%">
+        <div class="card text-light">
+         <img  class="card-img w-100"src="./images/Sunrise.gif" height="650">
         <div class="card-img-overlay">
-         <br><br><br><br><br><br>
-         <br><br><br><br><br><br>
-         <br><br><br>
-        <div class="row">
-         <div class="col-1"></div>
-         <div class="col-7">
-            <div class="h1 fw-bold">Inner peace is the new Success!</div>
-            <div class="ms-1 h4"><b class="text-warning">Bhagavad-Gita</b> the user manual to expertise the art of living.</div>
-            <div class="ms-1 h4"><b class="text-warning">Meditation</b> because some questions can't be answered by Google.</div>
-            <div class="ms-1 h4"><b class="text-warning">YOGA</b> is the journey of the self, through the self, to the self.</div>
+         <div class="row mt-5"></div>
+         <div class="row mt-5"></div>   
+         <div class="row mt-5"></div>   
+         <div class="row mt-5"></div>   
+         <div class="row mt-5"></div>   
+         <div class="mt-5 container-fluid">
+            <div class="fw-bold fs-1 mt-5">Inner peace is the new Success!</div>
+            <div class="ms-1 fs-3"><b class="text-warning">Bhagavad-Gita</b> the user manual to expertise the art of living.</div>
+            <div class="ms-1  fs-3"><b class="text-warning">Meditation</b> because some questions can't be answered by Google.</div>
+            <div class="ms-1 fs-3"><b class="text-warning">YOGA</b> is the journey of the self, through the self, to the self.</div>
          </div>
-         <div class="col-2"></div>
         </div>
         </div>
-        </div>
-        <div class="carousel container-fluid carousel-fade" style="margin-top: -180px;" data-bs-ride="carousel" id="two">
-           <div class="carousel-inner">
-        <div class="carousel-item"><a href="medi-course.html"><img class="rounded-5" src="images/banner1.png" width="100%"></a></div>
-            <div class="carousel-item  active"><a href="gita-course.html"><img class="rounded-5" src="images/banner2.png" width="100%" ></a></div>
-           </div>
-        </div>
-     </header>
+        <div class="carousel container-fluid carousel-fade mt-3" data-bs-ride="carousel">
+         <div class="carousel-inner">
+          <div class="carousel-item  active"><a href="gita-course.html"><img class="rounded-5 w-100" src="images/banner2.png"></a></div>
+         <div class="carousel-item"><a href="medi-course.html"><img class="rounded-5 w-100" src="images/banner1.png"></a></div>
+         </div>
+      </div>
+     </header> 
      <section>
-      <h1 class="phrase">YO:GA O'CLOCK</h1>
-      <h3 class="fw-bold p-1 text-secondary" style="margin-left:130px;">Y.O.G.A Your Opportunity for growth and awakening..</h3>
+      <h1 class="m-auto fw-bold mt-3 p-2">YO:GA O'CLOCK</h1>
+      <h3 class="fw-bold p-2 text-secondary">Y.O.G.A Your Opportunity for growth and awakening..</h3>
          <div class="mediate">
             <div><a href="yogaBeg.html"><img  class="rounded-5 img1" src="images/beg(person).jpeg"></a></div>
           <div><a href="stress.html"><img class="rounded-5" src="images/beg(online).jpeg" height="300" width="300"></a></div>
