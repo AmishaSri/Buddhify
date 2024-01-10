@@ -22,7 +22,7 @@
     </head>
     <body class="container-fluid">
        <header>
-        <nav class="navbar navbar-expand-lg justify-content-center bg-info-subtle mt-5" data-bs-theme="light" id="home" >
+        <nav class="navbar navbar-expand-lg justify-content-center bg-info-subtle" data-bs-theme="light" id="home" >
           <div class="container-fluid">
            <a href="home.html" class="navbar-brand ms-5 h1 fw-bold"><span><img class="rounded-5" src="./images/logoo.jpeg" height="40" width="40"></span> Buddhify</a>
            <button class="navbar-toggler" type="button" data-bs-target="#menuList" data-bs-toggle="collapse"> <span class="navbar-toggler-icon"></span></button>
@@ -42,41 +42,36 @@
        </nav>
        </header>
        <section class="row m-5">
-        <div class="card w-25 col-2 m-5">
+        <div class="col-md-2">
+          <select>
+              <option>Release date (newest first)</option>
+              <option>Release date (oldest first)</option>
+              <option>Course Title (a-z)</option>
+              <option>Course Title (A-Z)</option>
+          </select>
+      </div>
+        <div class="card col-md-3 mt-5 ms-3">
             <a href="gita-course.html"><img class="card-img" src="./images/coursee.PNG"></a>
-            <div class="card-body">
+            <div class="card-body bg-secondary-subtle">
                 <br>
-              <p class="card-text h3">Bhagavad Gita Sysytematic Course</p><br>
+              <p class="card-text h3">Bhagavad Gita Systematic Course</p><br>
               <p class="card-text"><span><img class="rounded-circle" src="./images/logoo.jpeg" height="25" width="25"></span>  &nbsp; By HG Amogh Lila Prabhu</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer bg-danger">
            <button class="btn-lg btn-outline-primary w-100 h4"><a href="gita-course.html">Start Learning</a></button>
             </div>
         </div>
-
-        <div class="card w-25 col-2 m-5">
+        <div class="card col-md-3 mt-5 ms-3">
            <a href="medi-course.html"> <img class="card-img" src="./images/medi.PNG"></a>
-            <div class="card-body">
+            <div class="card-body bg-secondary-subtle">
                 <br>
               <p class="card-text h3">21 days of Meditation for beginers</p><br>
               <p class="card-text"><span><img class="rounded-circle" src="./images/logoo.jpeg" height="25" width="25"></span> &nbsp; By Gurudev Sri Sri Ravi Shankar
               </p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer bg-danger">
            <button class="btn-lg btn-outline-primary w-100 h4"> <a href="medi-course.html"> Start Learning</a></button>
             </div>
-        </div>
-
-        <div class="col-2"></div>
-       
-        
-        <div class="col-2">
-            <select>
-                <option>Release date (newest first)</option>
-                <option>Release date (oldest first)</option>
-                <option>Course Title (a-z)</option>
-                <option>Course Title (A-Z)</option>
-            </select>
         </div>
        </section>
        <footer>

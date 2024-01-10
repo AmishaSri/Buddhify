@@ -35,8 +35,7 @@
   .panel:hover{
     background-color: rgb(250, 239, 220);
   }
-  a{
-     
+  a{  
     color:black;
   }
   .accordion:hover{
@@ -47,7 +46,7 @@
     </head>
     <body class="container-fluid">
        <header>
-        <nav class="navbar navbar-expand-lg justify-content-center bg-info-subtle mt-5" data-bs-theme="light" id="home" >
+        <nav class="navbar navbar-expand-lg justify-content-center bg-info-subtle" data-bs-theme="light" id="home" >
           <div class="container-fluid">
            <a href="home.html" class="navbar-brand ms-5 h1 fw-bold"><span><img class="rounded-5" src="./images/logoo.jpeg" height="40" width="40"></span> Buddhify</a>
            <button class="navbar-toggler" type="button" data-bs-target="#menuList" data-bs-toggle="collapse"> <span class="navbar-toggler-icon"></span></button>
@@ -67,38 +66,38 @@
        </nav>
        </header>
        <section class="p-5" style="background-color:rgb(250, 241, 223)">
-        <br><br><br>  <h2 class="fw-bold">BHAGAVAD GITA SYSTEMATIC COURSE</h2>
-          <div class="d-flex justify-content-around">
-            <div>uncategorized</div>
-            <div><span class="bi bi-share-fill"></span> &nbsp;Share</div>
+        <h2 class="fw-bold m-auto">BHAGAVAD GITA SYSTEMATIC COURSE</h2>
+          <div class="row m-auto">
+            <div class="col-6">uncategorized</div>
+            <div class="col-6"><span class="bi bi-share-fill"></span> &nbsp;Share</div>
           </div>
-          <div class="d-flex justify-content-around mt-3">
-            <div>
-                <img src="./images/coursee.PNG" height="350" width="600">
+          <div class="row mt-3 text-center m-auto">
+            <div class="col-md-6">
+                <img class="img-fluid" src="./images/coursee.PNG" height="350" width="600">
             </div>
-            <div>
-                <div class="card mt-2">
-                    <div class="card-header bg-dark-subtle">
-                        <button class="btn btn-lg btn-primary text-light ms-5"><a href="#start" style="text-decoration: none;">Start Learning</a></button>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><span class="bi bi-bar-chart-fill"></span>Levels</li>
-                            <li><span class="bi bi-mortarboard"></span>1 Total Enrolled</li>
-                            <li><span class="bi bi-arrow-clockwise"></span>30 Dec 2023 Last Updated</li>
-                        </ul>
-                    </div>
+            <div class="col-md-4">
+              <div class="card mt-2">
+                <div class="card-body">
+                   <p><b>A Course by </b><br>
+                       <span><img class="rounded-circle" src="./images/logoo.jpeg" height="40" width="40"></span> &nbsp;HR Amogh Lila Prabhu</p>
                 </div>
-                <div class="card mt-2">
-                 <div class="card-body">
-                    <p><b>A Course by </b><br>
-                        <span><img class="rounded-circle" src="./images/logoo.jpeg" height="40" width="40"></span> &nbsp;HR Amogh Lila Prabhu</p>
-                 </div>
-                </div>
+               </div>
+                  <div class="card mt-2">
+                      <div class="card-header bg-dark-subtle">
+                          <button class="btn btn-lg btn-primary text-light ms-5"><a href="#start" style="text-decoration: none;">Start Learning</a></button>
+                      </div>
+                      <div class="card-body">
+                          <ul>
+                              <li><span class="bi bi-bar-chart-fill"></span>Levels</li>
+                              <li><span class="bi bi-mortarboard"></span>1 Total Enrolled</li>
+                              <li><span class="bi bi-arrow-clockwise"></span>30 Dec 2023 Last Updated</li>
+                          </ul>
+                      </div>
+                  </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-8">
+          <div class="row mt-3">
+            <div class="col-md-8">
               <ul class="nav nav-tabs">
                 <li class="nav-item"><a href="#courseinfo" data-bs-toggle="tab" class="nav-link active">Course Info</a></li>
                 <li class="nav-item"><a href="#reviews" data-bs-toggle="tab" class="nav-link ">Reviews</a></li>
@@ -117,7 +116,7 @@
                   <h2 class="fw-bold mt-3">Student Ratings and Reviews</h2>
                  <div class="card ms-5">
                   <div class="card-body row">
-                    <div class="col">
+                    <div class="col-md">
                       <h1>5.0</h1>
                       <h3>Total 1 rating</h3>
                     </div>
@@ -130,12 +129,12 @@
                     </div>
                   </div>
                   <div class="card-footer row">
-                    <div class="col">
+                    <div class="col-md">
                       <img class="rounded-circle" src="./images/logoo.jpeg" height="60" width="60">
                       <h2 class="fw-bold"> Buddhify</h2>
                       <h4 class="text-secondary">1 months ago</h4>
                     </div>
-                    <div class="col">
+                    <div class="col-md">
                       <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span></div>
                       <div>Best</div>
                     </div>
@@ -145,10 +144,10 @@
               </div>
             </div>
             <br><br>
-            <div class="col-4"></div>
+            <div class="col-md-4"></div>
           </div>
           <div class="row mt-5">
-            <div class="col-4">
+            <div class="col-md-4">
               <h2 class="fw-bold mt-3" id="start">COURSE CONTENT</h2>
               <div class="accordion container-fluid" id="faqs">
                 <div class="accordion-item">
@@ -386,8 +385,8 @@
               </div>
               </div>
             </div>
-            <div class="col-8">
-              <iframe class="mt-5 p-3" name="main-frame" height="500" width="100%"></iframe>
+            <div class="col-md-8">
+              <iframe class="mt-5" name="main-frame" height="500" width="100%"></iframe>
             </div>
 
           </div>
