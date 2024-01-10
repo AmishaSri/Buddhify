@@ -8,15 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <style>
-   
-    .card{
-      width:270px;
-    }
     ul{
       list-style: none;
-    }
-    section{
-      margin-top: 100px;
     }
     footer{
       background-image: linear-gradient(skyblue,white);
@@ -32,13 +25,16 @@
     color:blue;
     font-weight: bold;
   }
+  .card{
+    width: 270px;
+  }
 </style>
 <script>
 </script>
 </head>
 <body class="container-fluid">
 <header>
-  <nav class="navbar navbar-expand-lg justify-content-center bg-info-subtle mt-5" data-bs-theme="light" id="home" >
+  <nav class="navbar navbar-expand-lg justify-content-center bg-info-subtle" data-bs-theme="light" id="home" >
     <div class="container-fluid">
      <a href="home.html" class="navbar-brand ms-5 h1 fw-bold"><span><img class="rounded-5" src="./images/logoo.jpeg" height="40" width="40"></span> Buddhify</a>
      <button class="navbar-toggler" type="button" data-bs-target="#menuList" data-bs-toggle="collapse"> <span class="navbar-toggler-icon"></span></button>
@@ -59,14 +55,14 @@
 </header>
 <section>
  <div class="text-center">
-  <h2 class="fw-bold text-primary">RESOLVE ALL OF YOUR LIFE PROBLEMS NOW </h2>
-  <h3>Divine Remedies with the reference of Bhagavad Geeta  Speaken by Lord Krishna Directed to you..</h3><br>
-        <a href="#help"><div class="btn btn-primary btn-lg align-center text-center">How to USE?</div></a>
+  <h2 class="fw-bold text-primary mt-3">RESOLVE ALL OF YOUR LIFE PROBLEMS NOW </h2>
+  <h3>Divine Remedies with the reference of Bhagavad Geeta  Speaken by Lord Krishna Directed to you..</h3>
+        <a href="#help"><div class="btn btn-primary btn-lg mt-3 align-center text-center">How to USE?</div></a>
  </div>
          <!---1st round-->
-      <div class="card-deck mt-5 d-flex" style="margin-left: 170px;">
+      <div class="card-deck mt-5 row justify-content-center">
         <!---4cards-->
-       <div class="card text-center border-primary">
+       <div class="card text-center col-md-3 mt-2 ms-3 border-primary">
         <img class="card-img-top" src="./images/angry.jpeg" alt="Card image cap">
         <div class="card-body">
         <h5 class="card-title text-primary">Anger</h5>
@@ -80,7 +76,7 @@
           </ul>
         </div>
        </div>
-       <div class="card text-center border-primary ms-3">
+       <div class="card text-center col-md-3 mt-2 ms-3 border-primary">
         <img class="card-img-top" src="./images/discrimination.jpeg" alt="Card image cap">
         <div class="card-body">
         <h5 class="card-title text-primary">Discrimination</h5>
@@ -92,7 +88,7 @@
           </ul>
         </div>
        </div>
-       <div class="card text-center border-primary ms-3">
+       <div class="card text-center  col-md-3 mt-2 ms-3 border-primary">
         <img class="card-img-top" src="./images/yawn.jpeg" alt="Card image cap">
         <div class="card-body"><br>
         <h5 class="card-title text-primary">Laziness</h5><br>
@@ -105,7 +101,7 @@
         </div>
        </div>
      
-       <div class="card text-center border-primary ms-3">
+       <div class="card text-center  col-md-3 ms-3 mt-2 border-primary">
         <img class="card-img-top" src="./images/sinful.jpeg" alt="Card image cap">
         <div class="card-body">
         <h5 class="card-title text-primary">Feeling Sinful</h5>
@@ -122,9 +118,9 @@
        </div>
       </div>
          <!---2nd round-->
-         <div class="card-deck mt-5 d-flex" style="margin-left: 170px;">
+         <div class="card-deck mt-5 row justify-content-center">
           <!---4cards-->
-         <div class="card text-center border-primary">
+         <div class="card text-center col-md-3 ms-3 mt-2 border-primary">
           <img class="card-img-top" src="./images/confusion.jpeg" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title text-primary">Confusion</h5>
@@ -136,7 +132,7 @@
           </div>
          </div>
        
-         <div class="card text-center border-primary ms-3">
+         <div class="card text-center col-md-3 mt-2 border-primary ms-3">
           <img class="card-img-top" src="./images/Depression.jpeg" alt="Card image cap">
           <div class="card-body"><br>
           <h5 class="card-title text-primary">Depression</h5><br>
@@ -148,7 +144,7 @@
           </div>
          </div>
        
-         <div class="card text-center border-primary ms-3">
+         <div class="card text-center col-md-3 border-primary mt-2 ms-3">
           <img class="card-img-top" src="./images/fear.jpeg" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title text-primary">Fear</h5>
@@ -159,7 +155,7 @@
             </ul>
           </div>
          </div>
-         <div class="card text-center border-primary ms-3">
+         <div class="card text-center col-md-3 border-primary mt-2 ms-3">
           <img class="card-img-top" src="./images/Envy.jpeg" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title text-primary">Dealing with Envy</h5>
@@ -172,9 +168,9 @@
          </div>
         </div>
         <!---3rd round-->
-        <div class="card-deck mt-5 d-flex" style="margin-left: 170px;">
+        <div class="card-deck mt-5 row justify-content-center">
           <!---4cards-->
-         <div class="card text-center border-primary">
+         <div class="card text-center col-md-3 mt-2 ms-3 border-primary">
           <img class="card-img-top" src="./images/loved.jpeg" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title text-primary">Death of Loved Ones</h5>
@@ -188,7 +184,7 @@
           </div>
          </div>
        
-         <div class="card text-center border-primary ms-3">
+         <div class="card text-center border-primary col-md-3 mt-2  ms-3">
           <img class="card-img-top" src="./images/hope.jpeg" alt="Card image cap">
           <div class="card-body"><br>
           <h5 class="card-title text-primary">Losing Hope</h5><br>
@@ -202,7 +198,7 @@
           </div>
          </div>
        
-         <div class="card text-center border-primary ms-3">
+         <div class="card text-center border-primary col-md-3 mt-2  ms-3">
           <img class="card-img-top" src="./images/peace2.jpeg" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title text-primary">Seeking Peace</h5>
@@ -215,7 +211,7 @@
             </ul>
           </div>
          </div>
-         <div class="card text-center border-primary ms-3">
+         <div class="card text-center border-primary col-md-3 mt-2 ms-3">
           <img class="card-img-top" src="./images/lust2.jpeg" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title text-primary">Lust</h5>
@@ -230,9 +226,9 @@
          </div>
         </div>
         <!---4th round-->
-        <div class="card-deck mt-5 d-flex" style="margin-left: 170px;">
+        <div class="card-deck mt-5 row justify-content-center">
           <!---4cards-->
-         <div class="card text-center border-primary">
+         <div class="card text-center col-md-3 mt-2 border-primary">
           <img class="card-img-top" src="./images/greed2.jpeg" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title text-primary">Greed</h5>
@@ -244,7 +240,7 @@
           </div>
          </div>
        
-         <div class="card text-center border-primary ms-3">
+         <div class="card text-center col-md-3 mt-2 border-primary ms-3">
           <img class="card-img-top" src="./images/forgive.jpg" alt="Card image cap">
           <div class="card-body"><br>
           <h5 class="card-title text-primary">Practising Forgiveness</h5><br>
@@ -256,7 +252,7 @@
           </div>
          </div>
        
-         <div class="card text-center border-primary ms-3">
+         <div class="card text-center border-primary col-md-3 mt-2 ms-3">
           <img class="card-img-top" src="./images/demotive.jpeg" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title text-primary">Demotivated</h5>
@@ -267,7 +263,7 @@
             </ul>
           </div>
          </div>
-         <div class="card text-center border-primary ms-3">
+         <div class="card text-center border-primary col-md-3 mt-2 ms-3">
           <img class="card-img-top" src="./images/forgot.jpeg" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title text-primary">Forgetfulness</h5>
@@ -279,9 +275,9 @@
          </div>
         </div>
          <!---5th round-->
-         <div class="card-deck mt-5 d-flex" style="margin-left: 170px;">
+         <div class="card-deck mt-5 row justify-content-center">
           <!---4cards-->
-         <div class="card text-center border-primary">
+         <div class="card text-center col-md-3 mt-2 ms-3 border-primary">
           <img class="card-img-top" src="./images/lone.jpeg" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title text-primary">Loneliness</h5>
@@ -294,7 +290,7 @@
           </div>
          </div>
        
-         <div class="card text-center border-primary ms-3">
+         <div class="card text-center col-md-3 mt-2 border-primary ms-3">
           <img class="card-img-top" src="./images/pride.jpeg" alt="Card image cap">
           <div class="card-body"><br>
           <h5 class="card-title text-primary">Pride</h5><br>
@@ -307,7 +303,7 @@
           </div>
          </div>
        
-         <div class="card text-center border-primary ms-3">
+         <div class="card text-center border-primary col-md-3 mt-2 ms-3">
           <img class="card-img-top" src="./images/temptation.jpeg" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title text-primary">Temptation</h5>
@@ -319,7 +315,7 @@
             </ul>
           </div>
          </div>
-         <div class="card text-center border-primary ms-3">
+         <div class="card text-center border-primary col-md-3 mt-2 ms-3">
           <img class="card-img-top" src="./images/mind.png" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title text-primary">Uncontrolled Mind</h5>
@@ -333,12 +329,12 @@
          </div>
         </div>
 
-         <div class=" bg-warning-subtle mt-4 border border-1 border-warning w-75 " style="margin-left: 190px;" >
+         <div class=" bg-warning-subtle mt-4 border border-1 border-warning m-auto" style="margin-left: 190px;" >
         <h3 class="text-center mt-2" id="help"> How to USE?</h3>
-         <p class="fw-bold ms-3">Figure out first which problem you are looking for a solution for. 
+         <p class="ms-3">Figure out first which problem you are looking for a solution for. 
         Then click on the Verse related to it, and you’ll get the reference to Bhagavad Gita Verses for your Life Problem</p>
-          <ul class="fw-bold">
-           <li> Locate: Figure out which problem you're suffering</li>
+          <ul>
+           <li><b>Locate:</b> Figure out which problem you're suffering</li>
            <li>Click on the solution verse and read full Verse</li>
            <li>Pray to Shri Krishna for ultimate Guidance</li>
           </ul>
